@@ -1,0 +1,30 @@
+# Framer-Motion
+
+import { motion } from 'framer-motion'
+import { ScaleExample } from './src/Basic-start.js'
+
+Install with `yarn add framer-motion`
+
+```js
+import { motion } from 'framer-motion'
+```
+
+can be used like this:
+
+```js
+<motion.div animate={{ scale: 2 }} />
+```
+
+in the example below, the `key` prop is used to re-render on click
+
+```js
+<motion.div
+  animate={{ scale: [1.5, 1.8, 1.5] }}
+  key={count}
+  onClick={() => {
+    setCount(count + 1)
+  }}
+/>
+```
+
+<ScaleExample />
